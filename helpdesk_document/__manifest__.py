@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Helpdesk Document for Enterprise Edition",
+    'name': "Helpdesk Document for Enterprise",
 
     'summary': """
         Tickets can now link to existing Documents -
@@ -10,6 +10,11 @@
         If a Customer submits a Helpdesk ticket that is related to an existing Odoo Document, such as a Sales Order,
         users can now select the document type and document in the ticket.  Valid Document types can be configured by
         editing the field defintion in the helpdesk_ticket.py file.
+        
+        Note: Apps that would be dependent on the types of Documents you are able to select are NOT installed.  You would
+        either need to install one or more of Inventory, Events Organization, Products & Pricelists, Project, Sales, 
+        Repair and/or Subscriptions for all Document Types to be available OR modify the field definition to exclude
+        Document Types you don't need.
     """,
 
     'author': "Odoo Training Modules",
@@ -31,6 +36,11 @@
     ],
     # only loaded in demonstration mode
     'demo': [
+    ],
+    
+    'images': [
+        'static/images/first_screenshot.png',
+        'static/images/second_screenshot.png',
     ],
     
 }
