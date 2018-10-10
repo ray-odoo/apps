@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Helpdesk Document for Enterprise",
+    'name': "Helpdesk Document",
 
     'summary': """
         Tickets can now link to existing Documents -
@@ -37,10 +37,6 @@
     # only loaded in demonstration mode
     'demo': [
     ],
-    
-    'images': [
-        'static/images/first_screenshot.png',
-        'static/images/second_screenshot.png',
-    ],
+
     
 }
