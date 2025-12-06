@@ -1,0 +1,108 @@
+/* Only apply when the specific class is added by the XML logic */
+.o-attachment-list-view {
+    gap: 0 !important;
+
+    .o-mail-AttachmentContainer {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 48px; /* Height for 2 rows */
+        border: none !important;
+        border-bottom: 1px solid #e0e0e0 !important;
+        border-radius: 0 !important;
+        padding: 0 !important; 
+        background: transparent !important;
+        display: flex;
+        flex-direction: column;
+
+        /* HIDE OLD UI elements */
+        > .o-mail-AttachmentImage, 
+        > .o-mail-AttachmentCard,
+        > .o-Attachment-uploaded,
+        > .o-isUploading { display: none !important; }
+
+        /* REVEAL THE HOVER LAYER */
+        .o-mail-Attachment-hover {
+            position: relative !important;
+            opacity: 1 !important;
+            background: transparent !important;
+            padding: 6px 4px 6px 12px !important;
+            width: 100% !important;
+            height: auto !important;
+            display: flex !important;
+            flex-direction: row !important; 
+            align-items: center !important;
+
+            /* Reset all text colors to dark grey */
+            *, span, div {
+                color: #374151 !important;
+                text-shadow: none !important;
+                margin: 0 !important;
+            }
+
+            /* Icon Size */
+            .o-mail-Attachment-hover-image, img {
+                width: 26px !important;
+                height: 26px !important;
+                object-fit: contain;
+                margin-top: 0 !important;
+            }
+            
+            /* ROW 1: Filename */
+            .o-mail-Attachment-hoverImageText {
+                font-size: 0.9em;
+                font-weight: 600 !important;
+                line-height: 1.2;
+                color: #1f2937 !important;
+            }
+
+            /* ROW 2: Meta Data (Date & Size) */
+            .o_attachment_meta {
+                font-size: 0.75em;
+                line-height: 1.2;
+                margin-top: 2px !important;
+                
+                span {
+                    color: #9ca3af !important; /* Light Grey */
+                    font-weight: 400 !important;
+                }
+            }
+
+            /* BUTTONS (Right Aligned) */
+            .o-mail-AttachmentButtons {
+                margin-left: auto !important;
+                padding: 0 !important;
+                display: flex;
+                gap: 2px;
+                align-items: center;
+
+                .btn {
+                    background: transparent !important;
+                    border: none;
+                    box-shadow: none !important;
+                    padding: 0 !important;
+                    width: 28px !important;
+                    height: 28px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i { 
+                        color: #9ca3af !important; /* Light grey by default */
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        background-color: #f3f4f6 !important;
+                        border-radius: 4px;
+                        i { color: #374151 !important; /* Darker on hover */ }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Row Hover Highlight */
+    .o-mail-AttachmentContainer:hover {
+        background-color: #f9fafb !important;
+    }
+}
