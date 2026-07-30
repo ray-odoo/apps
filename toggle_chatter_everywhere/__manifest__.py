@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "toggle_chatter_everwhere",
-    'summary': """Toggle Chatter Everywhere""",
-    'description': """
-        - Systemwide Show/Hide Chatter (like ToDo App)
-        """,
-    'author': 'Odoo Valencia',
-    'website': 'https://www.odoo.com/',
-    'category': 'Custom Development',
+    'name': 'Toggle Chatter Everywhere',
     'version': '1.0',
+    'category': 'Proof of Concept',
+    'summary': 'Show/Hide Chatter on every Document Type (like the ToDo App)',
+    'author': 'Odoo Technical Marketing',
+    'website': 'https://www.odoo.com/',
     'license': 'OPL-1',
     'depends': ['web'],
     'assets': {
