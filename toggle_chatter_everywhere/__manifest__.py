@@ -10,8 +10,8 @@
     'depends': ['web'],
     'assets': {
         'web.assets_backend': [
-            'toggle_chatter_everwhere/static/src/js/chatter_toggle_service.js',
-            'toggle_chatter_everwhere/static/src/scss/chatter_toggle.scss',
+            'toggle_chatter_everywhere/static/src/js/chatter_toggle_service.js',
+            'toggle_chatter_everywhere/static/src/scss/chatter_toggle.scss',
         ],
     },
     'images': [
