@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "toggle_chatter_everwhere",
-    'summary': """Toggle Chatter""",
+    'summary': """Toggle Chatter Everywhere""",
     'description': """
         - Systemwide Show/Hide Chatter (like ToDo App)
         """,
@@ -17,6 +17,9 @@
             'toggle_chatter_everwhere/static/src/scss/chatter_toggle.scss',
         ],
     },
+    'images': [
+        'static/description/toggle_chatter_cover.png',
+    ],
     'installable': True,
     'application': False,
     'auto_install': False,
