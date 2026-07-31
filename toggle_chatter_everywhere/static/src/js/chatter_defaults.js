@@ -3,7 +3,7 @@
 import { registry } from "@web/core/registry";
 
 // Settings > Technical > System Parameters > key below.
-// Value: comma-separated technical model names, e.g. "sale.order,account.invoice"
+// Value: comma-separated technical model names, e.g. "wls.order.calculator,sale.order"
 // Models in this list start with the chatter hidden UNTIL the user
 // manually toggles it once - after that their explicit choice always wins
 // (see chatter_toggle_control_panel.js).
@@ -39,7 +39,7 @@ registry.category("services").add("chatterDefaults", chatterDefaultsService);
  * Two sources, tried in order:
  *  1. The URL, when it contains the raw technical name - true for models
  *     with no "friendly" action-url slug, and for nested breadcrumb levels
- *     (e.g. .../orders/28041/368361/project.task/11185).
+ *     (e.g. .../orders/28041/368361/wls.order.calculator/11185).
  *  2. The action service, for models accessed via a friendly slug at the
  *     top level (e.g. sale.order at /odoo/orders/28041), where the URL
  *     never exposes the technical name at all.

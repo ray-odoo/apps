@@ -1,14 +1,14 @@
 // Avoid a flash of visible/hidden chatter before the control panel has
 // determined the initial state (stored preference or configured default).
 .o_form_renderer:not(.o_chatter_toggle_ready) {
-    .o-mail-Chatter,
+    .o-mail-Form-chatter,
     .o_attachment_preview {
         visibility: hidden !important;
     }
 }
 
 .o_form_renderer.o_chatter_toggle_hidden {
-    .o-mail-Chatter,
+    .o-mail-Form-chatter,
     .o_attachment_preview {
         display: none !important;
     }

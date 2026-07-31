@@ -8,9 +8,18 @@
 Replicates the native ToDo App's own "toggle chatter" control-panel button
 and mechanism, generalized to every model's Form view.
 
+- The button is inserted into the control panel template at the exact same
+  structural position the native ToDo App uses (before the pager), so it
+  renders reliably for both new/unsaved and saved records.
+- The ToDo App itself is untouched: it registers its own separate view type
+  with its own explicit Controller/ControlPanel/Renderer, so this module's
+  patch of the shared base Form view never reaches it. No duplicate button,
+  no conflict, nothing to disable.
 - Settings > Technical > System Parameters > "toggle_chatter_everywhere.default_hidden_models"
   accepts a comma-separated list of technical model names that should start
-  with the chatter hidden by default (e.g. "sale.order,account.invoice").
+  with the chatter hidden by default (e.g. "wls.order.calculator,sale.order").
+  A user's own explicit toggle on a given model always overrides this default
+  afterwards.
 """,
     'author': 'Odoo Technical Marketing',
     'website': 'https://www.odoo.com/',
